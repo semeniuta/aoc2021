@@ -8,7 +8,7 @@ if __name__ == '__main__':
     fpath = common.file_path('input.txt')
     four_last = lib.read_four_last(fpath)
 
-    n_unique = lib.count_unique(four_last)
-    assert n_unique == 274
+    unique_res = lib.find_unique_in_all_last(four_last)
+    assert unique_res.count == 274
 
-    print(f'Number of unique: {n_unique}')
+    print(f'Number of unique: {unique_res.count}')
